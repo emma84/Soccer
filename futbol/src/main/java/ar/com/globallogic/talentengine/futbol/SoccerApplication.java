@@ -1,0 +1,15 @@
+package ar.com.globallogic.talentengine.futbol;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class },
+		scanBasePackages={"ar.com.globallogic.talentengine.futbol"})
+public class SoccerApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SoccerApplication.class, args);
+	}
+
+}
